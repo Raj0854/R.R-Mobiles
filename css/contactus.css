@@ -73,6 +73,10 @@ body{
     font-size: 25px;
     background-color:#0cffe34f;
 }
+.menu_item:hover{
+    background-color: #191919;
+    border: solid 2px #0cffe34f;
+}
 a{
     text-decoration: none;
     color: #ececea;
