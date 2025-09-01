@@ -145,6 +145,17 @@ a{
     margin-left: 10px;
     cursor: pointer;
 }
+.btn{
+    width: 150px;
+    height: 50px;
+    background-color: #191919;
+    color: #c0ae5f;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+    cursor: pointer;
+}
 .product_name{
     color: #0cffe34f;
     font-size: 20px;
