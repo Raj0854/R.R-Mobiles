@@ -154,6 +154,27 @@ a{
 }
 .b3_btn:hover{
     background-color: #0cffe34f;
+
+}
+.products_heading{
+    color: #cecece;
+    font-size: 40px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.products_section{
+    width: 1200px;
+    height: auto;
+    border: solid 0px black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 .product_name{
     color: #0cffe34f;
@@ -188,6 +209,8 @@ a{
     
 }
 .footer{
+    height: 100px;
+    width: 1200px;
     background-color: grey;
     color: #191919;
     text-align: center;
