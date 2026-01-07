@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="css/login.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="login_id.js"></script>
 </head>
 <body>
     <!--start header section-->
@@ -13,73 +16,43 @@
             <img src="img/3.png" alt="logo" height="70px" width="70px">
         </div>
         <div class="block2"><B> <p class="txt">R.R.   <span class="text1"> Mobiles World</span> </p></B></div>
-        <div class="block3">
-            <ul class="nav">
-                 <li class="menu_item"><a href="index.html">Home</a></li>
-                <li class="menu_item"><a href="contactus.html">Contact us</a></li>
-                <li class="menu_item"><a href="AboutUs.html">About Us</a></li>
-                <li class="menu_item"><a href="login.html">Login</a></li>
-            </ul>
-        </div>
-        <div class="block4">
-            <a href="#"><img src="img/cart.png" alt="cart" height="50px" width="50px"></a>
-        </div>
+        
     </div>
     <!--end header section-->
-    <a href="login.html"><b><h3>Back</h3></b></a>
-    <center>
-        <h1><B><U>*Registration Form*</U></B></h1>
-        <table class="login-table" border="0" cellspacing="0" cellpadding="10">
-            <td>
-                <table border="0" cellspacing="0" cellpadding="10">
-                    <form>
-                        <tr>
-                            <td><B>Name</B></td>
-                            <td> <input type="text" placeholder="Enter Your Name" required></td>
-                        </tr>
-                        <tr>
-                            <td><b>Contact No.</b></td>
-                            <td> <input type="number" placeholder="Enter Your Mobile Number"required></td>
-                        </tr>
-                        <tr>
-                            <td><B>Email ID</B></td>
-                            <td> <input type="email" placeholder="Enter Your Email ID"required></td>
-                        </tr>
-                        <TR>
-                            <td><b>Gender</b></td>
-                            <td><input type="radio" name="g"><B>Male</B>
-                                <input type="radio" name="g"><B>Female</B>
-                    
-                            </td>
-                        </TR>
-                        <tr>
-                            <td><B>Date of Birth</B></td>
-                            <td><input type="date" required></td>
-                        </tr>
-                        
-                       
-                       
-                        <tr>
-                            <td><b>Password</b></td>
-                            <td><input type="password" placeholder="Set your password"required></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" align="center">
-                                <input class="btn" type="submit" value="Sumbit">
-                                <input class="btn" type="Reset" value="Reset">
-                            </td>
-                        </tr>
-                    </form>
-               </table>
-               *Note:- Your contact number is your username.*
-            </td>
-          </tr>
-        </table>  
-        <BR>
-            <a href="login.html"><B><U>Already user? Signin</U></B></a>  
-    </center>
-
-
-
+    <a href="index.html"><b><h3>Back</h3></b></a>
+   <div class="container">
+    <div class="row justify-content-center align-items-center" style="height:80vh;">
+      <div class="col-6">
+        <div class="card p-4">
+          <h2 class="text-center mb-4"><B>Registration Form</B></h2>
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label"><B>Username</B></label>
+              <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"><B>Email ID</B></label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Email ID" required>
+            </div>
+            <div class="mb-3">
+              <label for="mobile" class="form-label"><B>Mobile Number</B></label>
+              <input type="number" class="form-control" id="mobile" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label"><B>Password</B></label>
+              <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
+            </div>
+            <div class="mb-3">
+                <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+                <label for="showPassword"><B>Show Password</B></label>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary text-dark " onclick="submit()"><B>Register</B></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
